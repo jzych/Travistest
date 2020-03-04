@@ -19,6 +19,7 @@ install:
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 90
 
 before_script:
+  - g++ --version
   - mkdir build
   - cd build
   - cmake ..
