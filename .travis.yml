@@ -7,11 +7,8 @@ os:
 
 compiler:
   - g++
-  - clang
 
 before_script:
-  - g++ --version
-  - gcov --version
   - mkdir build
   - cd build
   - cmake ..
@@ -19,7 +16,6 @@ before_script:
 script:
   - make
   - ./TravisTest-ut
-
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
