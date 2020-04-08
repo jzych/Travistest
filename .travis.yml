@@ -26,4 +26,4 @@ before_script:
 
 script:
   - make
-  - ./LogicalImages-ut
+  - ./TravisTest-ut
